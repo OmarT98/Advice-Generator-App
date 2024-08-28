@@ -1,0 +1,66 @@
+:root {
+  --light-Cyan: hsl(193, 38%, 86%);
+  --neon-Green: hsl(150, 100%, 66%);
+  --grayish-Blue: hsl(217, 19%, 38%);
+  --dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --dark-Blue: hsl(218, 23%, 16%);
+
+  --main-font-size: 28px;
+  --main-font-weight: 800;
+}
+
+body {
+  font-family: "Manrope", system-ui;
+  background-color: var(--dark-Blue);
+}
+
+.quote-card {
+  background-color: var(--dark-Grayish-Blue);
+  transition: width 500ms ease;
+}
+
+p {
+  color: var(--neon-Green);
+  font-family: monospace;
+  letter-spacing: 0.4rem;
+}
+
+h1 {
+  color: var(--light-Cyan);
+}
+
+.dice-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--neon-Green);
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  border-radius: 50%;
+  transition: box-shadow 500ms;
+}
+
+.dice-icon img {
+  position: absolute;
+  bottom: 25%;
+  transform: translateX(54%);
+}
+
+.dice-icon:hover {
+  transition: 500ms;
+  box-shadow: 0px 0px 20px 7px var(--neon-Green);
+}
+
+#advice-quote {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+#advice-quote.fade-out {
+  opacity: 0;
+}
+
+#advice-quote.fade-in {
+  opacity: 1;
+}
